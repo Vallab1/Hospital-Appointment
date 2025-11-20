@@ -5,7 +5,11 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        'primary':'#00FFFF'
+        'primary':'#00FFFF',
+        'LemonChiffon':'#FFFACD'
+      },
+      gridTemplateColumns:{
+        'auto':'repeat(auto-fill,minmax(200px, 1fr))'
       }
     },
   },
