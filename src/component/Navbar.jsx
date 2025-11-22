@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
         <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400'>
             <img onClick={()=>navigate('/')} className='w-20 cursor-pointer' src={assets.logo} alt="" />
-            <ul className='hidden md:flex iteams-start gap-5 font-medium'>
+            <ul className='hidden md:flex items-start gap-5 font-medium'>
                 <NavLink to='/'>
                     <li className='py-1'>HOME</li>
                 </NavLink>
@@ -33,7 +33,7 @@ const Navbar = () => {
                             <div className='min-w-48 bg-stone-100 rounded flex flex-col gap-4 p-4'>
                                 <p onClick={()=>navigate('/my-profile')} className='hover:text-black cursor-pointer'>My Profile</p>
                                 <p onClick={()=>navigate('/my-appointments')} className='hover:text-black cursor-pointer'>My Appointments</p>
-                                <p onClick={()=>setToken(false)} className='hover:text-black cursor-pointer'>Logout</p>
+                                <p onClick={()=> {navigate('/login');setToken(false)}} className='hover:text-black cursor-pointer'>Logout</p>
                             </div>
                         </div>
                     </div>
