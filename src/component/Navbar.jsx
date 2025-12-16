@@ -68,10 +68,10 @@ const Navbar = () => {
                 </div>
 
                 <ul className='flex flex-col item-center gap-2 mt-5 px-5 text-lg font-medium'>
-                    <NavLink onClick={() => setShowMenu(false)} to={'/'}>Home</NavLink>
-                    <NavLink onClick={() => setShowMenu(false)} to={'/doctors'}>ALL DOCTORS</NavLink>
-                    <NavLink onClick={() => setShowMenu(false)} to={'/about'}>ABOUT</NavLink>
-                    <NavLink onClick={() => setShowMenu(false)} to={'/contact'}>CONTACT</NavLink>
+                    <NavLink onClick={() => setShowMenu(false)} to={'/'}><p className="px-4 py-2 rounded inline-block">Home</p></NavLink>
+                    <NavLink onClick={() => setShowMenu(false)} to={'/doctors'}><p className="px-4 py-2 rounded inline-block">ALL DOCTORS</p></NavLink>
+                    <NavLink onClick={() => setShowMenu(false)} to={'/about'}><p className="px-4 py-2 rounded inline-block">ABOUT</p></NavLink>
+                    <NavLink onClick={() => setShowMenu(false)} to={'/contact'}><p className="px-4 py-2 rounded inline-block">CONTACT</p></NavLink>
                 </ul>
             </div>
         </div>
